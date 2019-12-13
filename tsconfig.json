@@ -15,7 +15,15 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@wjanaszek/item/data-access": ["libs/item/data-access/src/index.ts"],
+      "@wjanaszek/item/resource": ["libs/item/resource/src/index.ts"],
+      "@wjanaszek/item/feature": ["libs/item/feature/src/index.ts"],
+      "@wjanaszek/item/ui-search-bar": ["libs/item/ui-search-bar/src/index.ts"],
+      "@wjanaszek/item/ui-sort-bar": ["libs/item/ui-sort-bar/src/index.ts"],
+      "@wjanaszek/item/ui-item-list": ["libs/item/ui-item-list/src/index.ts"],
+      "@wjanaszek/item/ui-filter-bar": ["libs/item/ui-filter-bar/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -1,0 +1,17 @@
+<mat-form-field>
+  <input
+    matInput
+    [formControl]="searchControl"
+    [placeholder]="'Search by title'"
+  />
+  <button
+    *ngIf="searchControl.value"
+    (click)="clearSearch()"
+    type="button "
+    mat-button
+    matSuffix
+    mat-icon-button
+  >
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-form-field>

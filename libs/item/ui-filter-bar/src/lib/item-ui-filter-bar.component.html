@@ -1,0 +1,8 @@
+<mat-form-field>
+  <mat-label>Filter by</mat-label>
+  <mat-select [formControl]="filterControl">
+    <mat-option *ngFor="let filter of filterPossibilities" [value]="filter.key">
+      {{ filter.displayedValue }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

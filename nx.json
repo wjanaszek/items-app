@@ -8,11 +8,32 @@
     "nx.json": "*"
   },
   "projects": {
-    "test-e2e": {
-      "tags": []
+    "item-e2e": {
+      "tags": ["scope:item", "type:application"]
     },
-    "test": {
-      "tags": []
+    "item": {
+      "tags": ["scope:item", "type:application"]
+    },
+    "item-data-access": {
+      "tags": ["scope:item", "type:data-access"]
+    },
+    "item-resource": {
+      "tags": ["scope:item", "type:resource"]
+    },
+    "item-feature": {
+      "tags": ["scope:item", "type:feature"]
+    },
+    "item-ui-search-bar": {
+      "tags": ["scope:item", "type:ui"]
+    },
+    "item-ui-sort-bar": {
+      "tags": ["scope:item", "type:ui"]
+    },
+    "item-ui-item-list": {
+      "tags": ["scope:item", "type:ui"]
+    },
+    "item-ui-filter-bar": {
+      "tags": ["scope:item", "type:ui"]
     }
   }
 }

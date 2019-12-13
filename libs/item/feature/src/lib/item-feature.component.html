@@ -1,0 +1,36 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row class="item__toolbar__search-bar">
+    <wjanaszek-item-ui-search-bar
+      [resetFilters]="filtersBackToDefault$ | async"
+      (searchChange)="onSearchValueChange($event)"
+    ></wjanaszek-item-ui-search-bar>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+    <div class="item__toolbar__filter-bar">
+      <wjanaszek-item-ui-filter-bar
+        [resetFilters]="filtersBackToDefault$ | async"
+        (typeFilterChange)="onTypeFilterValueChange($event)"
+      ></wjanaszek-item-ui-filter-bar>
+    </div>
+    <wjanaszek-item-ui-sort-bar
+      [resetFilters]="filtersBackToDefault$ | async"
+      (sortChange)="onSortValueChange($event)"
+    ></wjanaszek-item-ui-sort-bar>
+
+    <span class="item__toolbar__empty_space"></span>
+
+    <button
+      mat-icon-button
+      type="button"
+      (click)="clearAllFilters()"
+      [matTooltip]="'Clear all filters'"
+    >
+      <mat-icon>clear</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<wjanaszek-item-ui-item-list
+  [itemsCollection]="itemsCollection$ | async"
+></wjanaszek-item-ui-item-list>
